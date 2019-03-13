@@ -10,16 +10,13 @@ import {ItemService} from '../services/item.service';
 export class CatalogComponent implements OnInit {
 
   items: Item[];
-  selectedItem: Item;
+  selectedItem;
 
   constructor(private itemService: ItemService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.items = this.itemService.getItems();
   }
 
-  onSelect(item: Item) {
-    this.selectedItem = item;
-  }
 }
