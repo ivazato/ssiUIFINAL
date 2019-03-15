@@ -45,7 +45,7 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LoginComponent} from './login/login.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -66,7 +66,7 @@ import {FormsModule} from '@angular/forms';
     MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule,
     MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule,
     MatTabsModule, MatToolbarModule, MatTooltipModule,
-    FlexLayoutModule, AppRoutingModule, FormsModule
+    FlexLayoutModule, AppRoutingModule, FormsModule, ReactiveFormsModule
 
   ],
   providers: [],
