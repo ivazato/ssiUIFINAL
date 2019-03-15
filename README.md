@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Docker
+ng build --prod
+
+You can build the image and run the container with Docker. The configuration is in the nginx folder if you want to change it.
+El punto al final de la siguiente instruccion es necesario:
+
+docker build -t ssiui .
+
+docker run -d -p 4200:4200 ssiui
